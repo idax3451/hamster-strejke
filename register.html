@@ -16,7 +16,7 @@
     <header>
       <nav>
         <div id="logotype-wrapper">
-          <a href="index.html"> LOGOTYPE </a>
+          <a href="index.html"> HAMSTERSTREJKE </a>
         </div>
         <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
@@ -39,6 +39,44 @@
         <article>
           <p class="placeholder">Opsummering</p>
         </article>
+      </section>
+      <section>
+        <h2>Kontakt</h2>
+        <form id="webform-4">
+          <div class="form-group">
+            <label for="story">Navn</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div class="form-group">
+            <label for="story">Fortæl om dit hamster her:</label>
+            <textarea id="story" name="story" rows="5" cols="33" />
+          </textarea>  
+          </div>
+          </div>
+          <div class="form-group"></div>
+          <button id="submit_btn" type="submit">Send</button>
+        </form>
+      </section>
+
+      <section>
+<label for="avatar">Her kan du uploade et billede af din hamster:</label>
+
+<input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+      </section>
+      <section>
+        <p>Hvor politisk aktiv ville du sige, at din hamster er?</p>
+        <input type="range" id="volume" name="volume" min="0" max="11" />
+<label for="volume">Meget politisk aktiv</label>
+      </section>
+
+      <section>
+        <p>Strejker din hamster også?</p>
+        <input type="radio" id="contactChoice1" name="contact" value="ja" />
+<label for="contactChoice1">Ja</label>
+<input type="radio" id="contactChoice2" name="contact" value="nej" />
+<label for="contactChoice2">Nej</label>
+<input type="radio" id="contactChoice3" name="contact" value="ved ikke" />
+<label for="contactChoice3">Ved ikke</label>
       </section>
     </main>
     <footer>
