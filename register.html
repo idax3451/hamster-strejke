@@ -16,17 +16,17 @@
     <header>
       <nav>
         <div id="logotype-wrapper">
-          <a href="index.html"> LOGOTYPE </a>
+          <a href="index.html"> HAMSTERSTREJKE </a>
         </div>
         <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
+          <li><a class="menuItem" href="instruction.html">Hamsterhjul? NEJ TAK </a></li>
+          <li><a class="menuItem" href="register.html">Del din hamster-historie </a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <h1>INDBERET</h1>
+    <h1>Del din hamster-historie</h1>
       <section id="form-section">
         <article id="form-info">
           <h2>Overskrift</h2>
@@ -40,6 +40,46 @@
           <p class="placeholder">Opsummering</p>
         </article>
       </section>
+      <section>
+        <h2>Kontakt</h2>
+        <form id="webform-4">
+          <div class="form-group">
+            <label for="story">Navn</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div class="form-group">
+            <label for="story">Fortæl om dit hamster her:</label>
+            <textarea id="story" name="story" rows="5" cols="33" />
+          </textarea>  
+          </div>
+          </div>
+          <div class="form-group"></div>
+          <button id="submit_btn" type="submit">Send</button>
+        </form>
+      </section>
+
+      <section>
+<label for="avatar">Her kan du uploade et billede af din hamster:</label>
+
+<input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+      </section>
+      <section>
+        <p>Hvor politisk aktiv ville du sige, at din hamster er?</p>
+       <span> <input type="range" id="volume" name="volume" min="0" max="11" />
+       </span> <label for="volume">Meget politisk aktiv</label>
+
+      </section>
+
+      <section>
+        <p>Strejker din hamster også?</p>
+        <input type="radio" id="contactChoice1" name="contact" value="ja" />
+<label for="contactChoice1">Ja</label>
+<input type="radio" id="contactChoice2" name="contact" value="nej" />
+<label for="contactChoice2">Nej</label>
+<input type="radio" id="contactChoice3" name="contact" value="ved ikke" />
+<label for="contactChoice3">Ved ikke</label>
+      </section>
+      <script src=../js/main.js></script>
     </main>
     <footer>
       <nav class="some">

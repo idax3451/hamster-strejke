@@ -1,3 +1,5 @@
+/* CARDS er til cards på forsiden og styler den */
+
 .daily_card {
   background-color: var(--article-background-color);
   display: grid;
@@ -31,15 +33,55 @@
   height: 100%;
   object-fit: cover;
 }
-.news_card {
-  background-color: var(--article-background-color);
+
+.hamster-teaser_img {
+  max-width: 100%;
+}
+
+.news-teaser_img {
+  max-width: 100%;
+}
+
+.hamster-icon {
+  max-width: 8%;
+}
+
+.nyhed-tekst {
+  padding-left: 0.7rem;
+}
+.news_card1 {
+  background-color: var(--article-background-color1);
   display: grid;
   grid-template-rows: repeat(min-content);
   gap: 0.4rem;
   padding: 1rem 0;
+  margin-bottom: 1rem;
   /* border: 1px solid var(--border-color); */
   height: minmax(300px, min-content);
 }
+
+.news_card2 {
+  background-color: var(--article-background-color2);
+  display: grid;
+  grid-template-rows: repeat(min-content);
+  gap: 0.4rem;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  /* border: 1px solid var(--border-color); */
+  height: minmax(300px, min-content);
+}
+
+.news_card3 {
+  background-color: var(--article-background-color3);
+  display: grid;
+  grid-template-rows: repeat(min-content);
+  gap: 0.4rem;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  /* border: 1px solid var(--border-color); */
+  height: minmax(300px, min-content);
+}
+
 .news_card:nth-child(2n) {
   background-color: var(--news-background-color-inverted);
 }
@@ -73,6 +115,19 @@
 .news_card .cta_btn {
   justify-self: center;
 }
+
+.menuItem {
+  display: inline-block;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--followup-text-bg-color4);
+  color: var(--followup-text-color2);
+  text-align: center;
+  text-decoration: none;
+  width: max-content;
+}
+
 .cta_btn {
   display: inline-block;
   padding: 0.3rem 0.5rem;
@@ -84,6 +139,43 @@
   text-decoration: none;
   width: max-content;
 }
+
+.cta_btn1 {
+  display: inline-block;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--followup-text-bg-color1);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  width: max-content;
+}
+
+.cta_btn2 {
+  display: inline-block;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--followup-text-bg-color2);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  width: max-content;
+}
+
+.cta_btn3 {
+  display: inline-block;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--followup-text-bg-color3);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  width: max-content;
+}
+
 .cta_btn:after {
   content: "\2192";
   margin-left: 0.5rem;
