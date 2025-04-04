@@ -9,6 +9,13 @@
   background-color: var(--info-background-color);
   padding: 0;
 }
+
+#sum div {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  gap: 0.5rem;
+}
+
 #form-summary h2 {
   line-height: 3rem;
   text-align: center;
