@@ -12,6 +12,3 @@ logo/hamster-logo-kladder.ai
 *.png
 *.svg
 .DS_Store
-*.png
-*.svg
-*.ai
