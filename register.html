@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/infographic.css" />
     <link rel="stylesheet" href="css/forms.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
-    <title>Emergency Site</title>
+    <title>Hamster-strejke</title>
   </head>
   <body id="register">
     <header>
@@ -34,12 +34,40 @@
         </article>
         <form id="webform"></form>
       </section>
+
       <section id="form-summary">
         <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
+        <article id="sum">
+          <div>
+            <h3>Navn:</h3>
+            <p id="sumName"> </p>
+          </div>
+          <div>
+            <h3>Gade:</h3>
+            <p id="sumStreet"> </p>
+          </div>
+          <div>
+            <h3>Husnr.:</h3>
+            <p id="sumNumber"> </p>
+          </div>
+          <div>
+            <h3>Postnummer:</h3>
+            <p id="sumPostcode"> </p>
+          </div>
+          <div>
+            <h3>By:</h3>
+            <p id="sumCity"> </p>
+          </div>
+          <div>
+            <h3>By:</h3>
+            <p id="sumAntal"> </p>
+          </div>
+          <form>
+            <button id="reset_btn" type="reset">Godkend og luk</button>
+          </form>
         </article>
       </section>
+
       <section>
         <h2>Kontakt</h2>
         <form id="webform-4">
@@ -54,31 +82,31 @@
           </div>
           </div>
           <div class="form-group"></div>
-          <button id="submit_btn" type="submit">Send</button>
+          <button id="submit_btn" type="button">Send</button>
         </form>
       </section>
 
       <section>
-<label for="avatar">Her kan du uploade et billede af din hamster:</label>
-
-<input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+        <label for="avatar">Her kan du uploade et billede af din hamster:</label>
+        <input type="file" id="avatar" name="hamsteravatar" accept="image/png, image/jpeg" />
       </section>
+
       <section>
         <p>Hvor politisk aktiv ville du sige, at din hamster er?</p>
-       <span> <input type="range" id="volume" name="volume" min="0" max="11" />
+       <span> <input type="range" id="volume" name="politiskhamster" min="0" max="11" />
        </span> <label for="volume">Meget politisk aktiv</label>
-
       </section>
 
       <section>
         <p>Strejker din hamster også?</p>
-        <input type="radio" id="contactChoice1" name="contact" value="ja" />
+        <input type="radio" id="contactChoice1" name="strejkehamster" value="ja" />
 <label for="contactChoice1">Ja</label>
-<input type="radio" id="contactChoice2" name="contact" value="nej" />
+<input type="radio" id="contactChoice2" name="strejkehamster" value="nej" />
 <label for="contactChoice2">Nej</label>
-<input type="radio" id="contactChoice3" name="contact" value="ved ikke" />
+<input type="radio" id="contactChoice3" name="strejkehamster" value="ved ikke" />
 <label for="contactChoice3">Ved ikke</label>
       </section>
+
       <script src=../js/main.js></script>
     </main>
     <footer>
