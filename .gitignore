@@ -7,4 +7,8 @@ Lauren_Martin/
 img/Artboard3.svg
 img/Artboard4.svg
 img/Artboard2.svg
+logo/hamster-logo-kladder.ai
+*.ai
+*.png
+*.svg
 .DS_Store

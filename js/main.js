@@ -88,6 +88,47 @@ function reset() {
     document.querySelector("sum").style.display = "none";
 }
 
+   /* circles */
+   document.querySelector("hamsterCircle").addEventListener("mouseover", highlight);
+   document.querySelector("hamsterCircle").addEventListener("mouseout", unhighlight);
+
+   function highlight() {
+    console.log("mouseover");
+    document.querySelector("hamsterCircle").style.opacity = 1;
+}
+
+function unhighlight() {
+    console.log("mouseout");
+   document.querySelector("hamsterCircle").style.opacity = 0; 
+}
+
+document.querySelector("mikrofonCircle").addEventListener("mouseover", highlight);
+document.querySelector("mikrofonCircle").addEventListener("mouseout", unhighlight);
+
+function highlight() {
+ console.log("mouseover");
+ document.querySelector("mikrofonCircle").style.opacity = 1;
+}
+
+function unhighlight() {
+ console.log("mouseout");
+document.querySelector("mikrofonCircle").style.opacity = 0; 
+}
+
+document.querySelector("ministerCircle").addEventListener("mouseover", highlight);
+document.querySelector("ministerCircle").addEventListener("mouseout", unhighlight);
+
+function highlight() {
+ console.log("mouseover");
+ document.querySelector("ministerCircle").style.opacity = 1;
+}
+
+function unhighlight() {
+ console.log("mouseout");
+document.querySelector("ministerCircle").style.opacity = 0; 
+}
+
+
 // range
 /* name="politiskhamster" */
 
