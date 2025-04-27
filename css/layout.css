@@ -82,3 +82,51 @@ footer ul {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+.close-dialog {
+  display: inline-block;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--followup-text-bg-color);
+  color: var(--followup-text-color);
+  text-align: center;
+  text-decoration: none;
+  width: max-content;
+}
+
+.news_card1 button {
+  display: inline-block;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--followup-text-bg-color1);
+  color: var(--followup-text-color);
+  text-align: center;
+  text-decoration: none;
+  width: max-content;
+}
+
+.news_card2 button {
+  display: inline-block;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--followup-text-bg-color2);
+  color: var(--followup-text-color);
+  text-align: center;
+  text-decoration: none;
+  width: max-content;
+}
+
+.news_card3 button {
+  display: inline-block;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--followup-text-bg-color3);
+  color: var(--followup-text-color);
+  text-align: center;
+  text-decoration: none;
+  width: max-content;
+}

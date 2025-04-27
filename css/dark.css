@@ -1,0 +1,33 @@
+:root {
+  --background-color: #707070;
+  --text-color: #ffffff;
+  --headline-color-inverted: #ffffff;
+  --header-background-color: #5486b8;
+  --article-background-color: #272727;
+  --article-background-color1: #272727;
+  --article-background-color2: #272727;
+  --article-background-color3: #272727;
+  --headline-bg-color-inverted: #ffe9ac;
+  color: var(--followup-text-color3);
+  --link-color: #000000;
+  --followup-text-color: 
+  --followup-text-bg-color4: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+legend,
+label {
+  color: var(--text-color);
+}
+
+imput {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}

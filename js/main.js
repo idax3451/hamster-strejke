@@ -1,133 +1,123 @@
+/* Summery kode */
 
-/*
-document.querySelector("#headCircle").addEventListener("mouseover", headHighlight);
-document.querySelector("#headCircle").addEventListener("mouseout", headUnHighlight);
-document.querySelector("#headCircle").addEventListener("click", headInfo);
+// document.querySelector("sum").style.display = "none";
 
-
-function headHighlight() {
-    console.log("headHighlight");
-    document.querySelector("#headCircle").style.fill = #ffffff;
-}
-
-function headHighUnlight() {
-    console.log("headHighUnlight");
-    document.querySelector("#headCircle").style.fill = #000000;
-}
-
-function headInfo() {
-    console.log("headInfo");
-    document.querySelector(".info-text > h2").textContent = "Hovedet !";
-document.querySelector(".info-text > article > p").textContent = "lorem ipsum"
-}
-*/
-
-/*
-document.querySelector("btn1").addEventListener("click", investigate);
-document.querySelector("btn2").addEventListener("click", investigate2);
-document.querySelector("btn3").addEventListener("click", investigate3);
-
-function investigate() {
-console.log("btn1");
-document.querySelector("btn1").style.backgroundColor = "#f00";
-}
-
-function investigate() {
-console.log("btn2");
-document.querySelector("btn2").style.backgroundColor = "#f00";
-}
-
-function investigate() {
-console.log("btn3");
-document.querySelector("btn3").style.backgroundColor = "#f00";
-}
-
-Alternative solution
-function investigate (){
-console.log(this);
-this.style.backgroundColor = "f00";
-}
-/*
-
-/*
-function headHighlight .....
-
-function headHighlight (){
-    console.log("headHighlight");
-    this.style.fill = "#f00";
-}
-    /*
-
-
-
-   /* Summery kode */
-
-document.querySelector("sum").style.display = "none";
-
-const submit = document.querySelector("submit_btn");
-const street = document.querySelector("sumStreet");
+const submit = document.querySelector("#submit_btn");
+const street = document.querySelector("#sumStreet");
 
 submit.addEventListener("click", submitForm);
 
 function submitForm() {
-document.querySelector("sum").style.visibility = "visiable";
-street.textContent = document.querySelector(#location-street).value;
+  //   document.querySelector("#sum").style.visibility = "visiable";
+  street.textContent = document.querySelector("#location-street").value;
 
-// select - option
-document.querySelector("sumNumber").textContent = document.querySelector("location-number").value;
+  // select - option
+  document.querySelector("#sumNumber").textContent = document.querySelector("location-number").value;
 
-// radiobuttons
-document.querySelector("#sumAntal").textContent = document.querySelector('input[name="strejkehamster"]:checked').value;
-
+  // radiobuttons
+  document.querySelector("#sumAntal").textContent = document.querySelector('input[name="strejkehamster"]:checked').value;
+}
 // reset knap
 
 document.querySelector("#reset_btn").addEventListener("click", reset);
 
 function reset() {
-    document.querySelector("#submit_btn").reset();
-    document.querySelector("sum").style.display = "none";
+  document.querySelector("#submit_btn").reset();
+  document.querySelector("sum").style.display = "none";
 }
 
-   /* circles */
-   document.querySelector("hamsterCircle").addEventListener("mouseover", highlight);
-   document.querySelector("hamsterCircle").addEventListener("mouseout", unhighlight);
+/* circles */
+document.querySelector("hamsterCircle").addEventListener("mouseover", highlight);
+document.querySelector("hamsterCircle").addEventListener("mouseout", unhighlight);
 
-   function highlight() {
-    console.log("mouseover");
-    document.querySelector("hamsterCircle").style.opacity = 1;
+function highlight() {
+  console.log("mouseover");
+  document.querySelector("hamsterCircle").style.opacity = 1;
 }
 
 function unhighlight() {
-    console.log("mouseout");
-   document.querySelector("hamsterCircle").style.opacity = 0; 
+  console.log("mouseout");
+  document.querySelector("hamsterCircle").style.opacity = 0;
 }
 
 document.querySelector("mikrofonCircle").addEventListener("mouseover", highlight);
 document.querySelector("mikrofonCircle").addEventListener("mouseout", unhighlight);
 
 function highlight() {
- console.log("mouseover");
- document.querySelector("mikrofonCircle").style.opacity = 1;
+  console.log("mouseover");
+  document.querySelector("mikrofonCircle").style.opacity = 1;
 }
 
 function unhighlight() {
- console.log("mouseout");
-document.querySelector("mikrofonCircle").style.opacity = 0; 
+  console.log("mouseout");
+  document.querySelector("mikrofonCircle").style.opacity = 0;
 }
 
 document.querySelector("ministerCircle").addEventListener("mouseover", highlight);
 document.querySelector("ministerCircle").addEventListener("mouseout", unhighlight);
 
 function highlight() {
- console.log("mouseover");
- document.querySelector("ministerCircle").style.opacity = 1;
+  console.log("mouseover");
+  document.querySelector("ministerCircle").style.opacity = 1;
 }
 
 function unhighlight() {
- console.log("mouseout");
-document.querySelector("ministerCircle").style.opacity = 0; 
+  console.log("mouseout");
+  document.querySelector("ministerCircle").style.opacity = 0;
 }
 
+/* dialog */
+
+// Version 2: with 3 sets of functions to make 3 breaking news work
+// **********************************************
+// const openBtn1 = document.querySelector(".news_card:first-of-type .read-more");
+// const closeBtn1 = document.querySelector(".news_card:first-of-type dialog button");
+// const dialog1 = document.querySelector(".news_card:first-of-type dialog");
+// openBtn1.addEventListener("click", openDialog1);
+// closeBtn1.addEventListener("click", closeDialog1);
+
+// function openDialog1() {
+// dialog1.showModal();
+// }
+// function closeDialog1() {
+// dialog1.close();
+// }
+
+// const openBtn2 = document.querySelector(".news_card:nth-child(2) .read-more");
+// const closeBtn2 = document.querySelector(".news_card:nth-child(2) dialog button");
+// const dialog2 = document.querySelector(".news_card:nth-child(2) dialog");
+// openBtn2.addEventListener("click", openDialog2);
+// closeBtn2.addEventListener("click", closeDialog2);
+
+// function closeDialog(dialog) {
+// dialog.close();
+// function openDialog2() {
+// dialog2.showModal();
+// }
+// function closeDialog2() {
+// dialog2.close();
+// }
+// }
+// const openBtn3 = document.querySelector(".news_card:nth-child(3) .read-more");
+// const closeBtn3 = document.querySelector(".news_card:nth-child(3) dialog button");
+// const dialog3 = document.querySelector(".news_card:nth-child(3) dialog");
+// openBtn3.addEventListener("click", openDialog3);
+// closeBtn3.addEventListener("click", closeDialog3);
+
+// function setupArticle(article) {
+// const openBtn = article.querySelector(".read-more");
+// const dialog = article.querySelector("dialog");
+// const closeBtn = dialog.querySelector(".close-dialog");
+
+// function openDialog3() {
+//  dialog3.showModal();
+//  }
+
+//  function closeDialog3() {
+//    dialog3.close();
+//  }
+// }
+// **********************************************
 
 // range
 /* name="politiskhamster" */
@@ -154,7 +144,3 @@ myArray.push(element.value);
 console.log(myArray);
 document.querySelector("#sumBehaviour").textContent = myArray.join(", ");
  */
-
-
-
-}

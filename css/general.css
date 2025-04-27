@@ -15,7 +15,6 @@ ul,
 
 body {
   font-family: var(--default-font);
-  color: var(--primary-font-color);
   background-color: var(--primary-bg-color);
 }
 header,
@@ -41,7 +40,7 @@ footer {
   column-gap: 1rem;
 }
 main section {
-  padding: 20px;
+  padding: 5px;
   /* margin: 10px; */
   /* border: 1px solid var(--border-color); */
   border-radius: var(--border-radius);
@@ -64,11 +63,20 @@ h1 {
 }
 h2 {
   font-size: var(--headline2-size);
-  -webkit-text-stroke: 2px rgb(0, 0, 0);
+  color: var(--headline-color-inverted);
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
+
 h3 {
   font-size: var(--headline3-size);
-  -webkit-text-stroke: 2px rgb(0, 0, 0);
+  color: var(--headline-color-inverted);
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+
+h4 {
+  font-size: var(--headline3-size);
+  color: var(--headline-color-inverted);
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
 
 main > h1 {
@@ -77,6 +85,11 @@ main > h1 {
   line-height: 4rem;
   padding: 5px 3rem 0 3rem;
   width: calc(80% - 6rem);
+}
+
+form > p {
+  color: black;
+  text-align: left;
 }
 
 /* NAVIGATION STRUCTURES */
@@ -107,15 +120,16 @@ a {
   color: var(--logotype-color);
   font-family: var(--logotype-font);
   -webkit-text-stroke: 1px rgb(0, 0, 0);
-  height: 3rem;
+  height: 6rem;
   width: 100%;
   display: flex;
   align-items: center;
 }
 
-h2 {
-  color: white;
-  -webkit-text-stroke: 1px rgb(0, 0, 0);
+.logoheader {
+  padding-left: 5rem;
+  width: 100%;
+  max-height: 100%;
 }
 
 header nav li a {

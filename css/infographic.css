@@ -65,3 +65,8 @@ section.info-graphic {
 #webform-4 label {
   margin: 1rem 0 0.4rem 0;
 }
+
+#form-summary {
+  background-color: var(--info-background-color);
+  margin-bottom: 3rem;
+}

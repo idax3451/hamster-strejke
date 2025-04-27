@@ -7,26 +7,30 @@
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/burger.css" />
+    <!-- <link rel="stylesheet" href="css/burger.css" /> -->
     <link rel="stylesheet" href="css/cards.css" />
-    <link rel="icon" type="image/png" href="img/fav.png" />
+    <link id="colormode" rel="stylesheet" href="css/light.css" />
+    <link rel="stylesheet" href="css/darklightstyle.css" />
     <title>Hamster-strejke</title>
   </head>
   <body id="frontpage">
     <header>
       <nav>
         <div id="logotype-wrapper">
-          <a href="index.html"> HAMSTERSTREJKE </a>
+          <a href="index.html"> <img class="logoheader" src="../img/logoheader.png" alt="hamsterstrejke" /> </a>
         </div>
         <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Hamsterhjul? NEJ TAK </a></li>
           <li><a class="menuItem" href="register.html">Del din hamster-historie</a></li>
+          <label class="switch">
+            <input id="switchBtn3" type="checkbox" />
+            <span class="slider"> </span>
+          </label>
         </ul>
       </nav>
     </header>
     <section id="main-disclamer">
       <div id="main-disclamer-content">
-        <img class="hamster-icon" src="" alt="ICON" />
         <div>
           <h1>KÆMPE HAMSTERFLUGT</h1>
           <div class="p-strejke"><p>Landsdækkende strejke er i gang</p></div>
@@ -39,44 +43,141 @@
           <img class="hamster-teaser_img" src="../img/Artboard6.svg" alt="hamster-teaser_img" />
           <div class="daily_text">
             <h2>Hamsterhjul? Nej tak!</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam ducimus ea, sed minima asperiores.</p>
-            <a href="" class="cta_btn">Se mere</a>
+            <p>Hamstere nedlægger arbejde og stormer beskæftigelsesministeriet</p>
+            <a href="instruction.html" class="cta_btn">Se mere</a>
           </div>
         </article>
         <article class="daily_card">
-          <img class="news-teaser_img" src="../img/Artboard3.svg" alt="teaser_img" />
+          <!-- <img class="news-teaser_img" src="../drawings/Artboardpan.svg" alt="teaser_img" />-->
+          <div id="pan" class="pan_animation"></div>
           <div class="daily_text">
             <h2>Del din hamster-historie</h2>
-            <p>Lorem ipsum dolor sit, sed minima asperiores</p>
-            <a href="" class="cta_btn">Se mere</a>
+            <p>Strejker din hamster også?</p>
+            <a href="register.html" class="cta_btn">Se mere</a>
           </div>
         </article>
       </section>
+
       <section id="breaking">
         <article class="news_card1">
-          <div class="nyhed" <h3>Fra bur til barrikade – revolutionen er gnavet i gang!</h3> </div>
-         <div class="nyhed-tekst" <p>Hamsterne har taget affære</p>
-          <img class="hamster-teaser_img" src="../img/Artboard2.svg" alt="hamster-teaser_img" />
-          <br>
-          <a class="cta_btn1" href="">Læs mere</a> </div>
+          <h2>Breaking news</h2>
+          <h3>Fra bur til barrikade – revolutionen er gnavet i gang!</h3>
+          <img src="../drawings/Artboard2.png" alt="hamster-teaser_img" class="hamster-teaser_img" />
+          <button id="article-open-btn1">Læs mere</button>
+          <dialog class="dialog-1">
+            <p class="nyhed-tekst">6. APRIL 2025 – KL. 20:14</p>
+            <h4>Fra bur til barrikade – revolutionen er gnavet i gang!</h4>
+            <img src="../drawings/Artboard2.png" alt="hamster-teaser_img" class="hamster-teaser_img" />
+            <h5>Oprør ulmer i høhjørnet</h5>
+            <p>
+              I en verden, hvor politik ofte kan virke som en endeløs karussel af tomme løfter og skuffende kompromisser, er der en ny spiller på banen. Hamsterne har taget affære og er klar til at ryste fundamentet for vores samfund. Med deres små,
+              men beslutsomme tænder, er de gået fra at gnave på burre til at gnave på barrikaderne.
+            </p>
+            <br />
+            <h5>Den lille hamster med den store drøm</h5>
+            <p>
+              Det hele startede med en enkelt hamster, der var træt af at løbe i hjul uden at komme noget sted hen. Denne lille kriger besluttede sig for at tage sagen i egne poter – eller snarere tænder. Med en kombination af charme og beslutsomhed
+              lykkedes det ham at samle en hær af ligesindede hamstere, der alle drømte om et bedre liv.
+            </p>
+            <br />
+            <h5>Gnavet i systemet</h5>
+            <p>
+              Hamsterne begyndte at gnavere sig vej gennem de bureaukratiske barrikader, der havde holdt dem tilbage i så længe. De gnav på skattepapirer, gnav på lovtekster og gnav sig endda vej ind i politikernes kontorer. Ingen dokument var for
+              tykt, ingen dør for massiv. Hamsterne viste, at selv de mindste kan gøre en forskel, når de står sammen.
+            </p>
+            <br />
+            <h5>En ny æra begynder</h5>
+            <p>
+              Med deres ufortrødne ånd og usvigtende tænder har hamsterne sat en revolution i gang, der vil blive husket i generationer. De har vist os, at det ikke kræver store gestus eller højtravende taler at skabe forandring. Det kræver blot mod
+              og beslutsomhed – og måske en god portion gnav. Så næste gang du ser en hamster i et hjul, husk på, at der måske er en lille revolutionær, der venter på at blive sluppet løs. For hamsterne har vist os, at selv de mindste kan gnavere sig
+              vej til en bedre fremtid.
+            </p>
+
+            <form method="dialog">
+              <button class="close-dialog">Luk nyhed</button>
+            </form>
+          </dialog>
         </article>
+
         <article class="news_card2">
-          <div class="nyhed" <h3>Nu udtaler Foreningen af Frie Hamstre sig.</h3> </div>
-          <div class="nyhed-tekst" <p>Vi dækker strejken LIVE.</p>
-            <img class="news-teaser_img" src="../img/Artboard8.svg" alt="teaser_img" />
-          <br>
-          <a class="cta_btn2" href="">Læs mere</a> </div>
+          <h3>Nu udtaler Foreningen af Frie Hamstre sig.</h3>
+          <img src="../img/Artboard8.svg" alt="teaser_img" class="news-teaser_img" />
+          <button id="article-open-btn2">Læs mere</button>
+          <dialog class="dialog-2">
+            <p class="nyhed-tekst">5. APRIL 2025 – KL. 16:30</p>
+            <h4>Nu udtaler Foreningen af Frie Hamstre sig. Vi dækker strejken LIVE</h4>
+            <img src="../img/Artboard8.svg" alt="teaser_img" class="news-teaser_img" />
+            <h5>Eksklusivt interview: Hamsterne tager ordet</h5>
+            <p>
+              I en uge præget af uro og forvirring har hamsterne endelig taget ordet. Foreningen af Frie Hamstre (FFH) har trådt frem i lyset og udtalt sig om den igangværende strejke, der har rystet verden. Vores nyhedsreporter har fået et
+              eksklusivt interview med en af foreningens mest fremtrædende medlemmer, Gnavius Maximus, der giver os et indblik i hamsternes krav og visioner.
+            </p>
+            <br />
+            <h5>"Vi vil ikke længere være stille"</h5>
+            <p>
+              For-hamster fra Foreningen af Frie Hamstre, mødte os ved barrikaderne, hvor den med fast blik og beslutsom stemme forklarede: "Vi vil ikke længere være stille. Vi har gnavet os vej gennem burre og bureaukrati, og nu er tiden kommet til
+              at gøre vores stemme hørt." Den fortsætter: "Vi kræver bedre levevilkår, mere frihed og en ende på den uretfærdige behandling, vi har været udsat for i så længe. Vi er ikke længere villige til at acceptere en tilværelse i hamsterhjulet,
+              hvor vi konstant bliver overset og ignoreret. Hamsterhjul? Nej tak! Vi vil have en fremtid, hvor vi kan løbe frit og uden grænser."
+            </p>
+            <br />
+            <h5>Strejken eskalerer: Hamsterne går til modangreb</h5>
+            <p>
+              Strejken, der startede som en fredelig protest, har nu eskaleret til et fuldt modangreb. Hamsterne har begyndt at gnavere sig vej ind i de mest uventede steder – fra regeringsbygninger til mediehusene. Ingen sted er for helligt, og
+              intet dokument er for vigtigt. "Vi vil fortsætte vores kamp, indtil vores krav bliver opfyldt," udtaler for-hamsteren med en glimt i øjet. "Vi har allieret os med andre undertrykte dyr, og sammen vil vi skabe en ny verden, hvor frihed
+              og lighed er fundamentet."
+            </p>
+            <br />
+            <h5>LIVE-dækning: Følg strejken minuttet for minuttet</h5>
+            <p>Vi vil følge strejken LIVE og bringe jer de seneste nyheder direkte fra fronten. Følg med, når hamsterne tager kampen til et nyt niveau, og se hvordan deres beslutsomhed og mod vil forme fremtiden.</p>
+            <br />
+            <p>Støt hamsterne i deres kamp for frihed og retfærdighed, og husk: Selv de mindste kan gøre en forskel, når de står sammen.</p>
+            <form method="dialog">
+              <button class="close-dialog">Luk nyhed</button>
+            </form>
+          </dialog>
         </article>
+
         <article class="news_card3">
-          <div class="nyhed" <h3>Hamstere i oprør: “Ud af hjulet – ind i historien!”</h3> </div>
-          <div class="nyhed-tekst" <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
+          <h3>Hamstere i oprør: “Ud af hjulet – ind i historien!”</h3>
+          <img class="hamster-teaser_img" src="../img/Artboard5.svg" alt="hamster-teaser_img" />
+          <button id="article-open-btn3">Læs mere</button>
+          <dialog class="dialog-3">
+            <p class="nyhed-tekst">7. APRIL 2025 – KL. 13:37</p>
+            <h4>Hamstere i oprør: “Ud af hjulet – ind i historien!”</h4>
             <img class="hamster-teaser_img" src="../img/Artboard5.svg" alt="hamster-teaser_img" />
-          <br>
-          <a class="cta_btn3" href="">Læs mere</a> </div>
+            <p>Tusindvis af hamstere stormede Beskæftigelsesministeriet i protest mod et liv i evig, meningsløs rotation. Ministeren kalder det “overdramatiseret piberi”.</p>
+            <br />
+            <h5>“Vi løber og løber – men kommer ingen vegne!”</h5>
+            <p>
+              Det startede som et stille pip. Nu er det en kollektiv råben fra bunden af buret. I dag har en massiv gruppe hamstere lagt hjulet på hylden og trukket i strejkeveste lavet af makulatur og burstrøelse. For første gang i nyere tid blev
+              hamsterhjulet i samtlige danske dyreforretninger og kæledyrshjem standset på samme tid. “Det er symbolsk – og praktisk, vi har ondt i benene,” udtalte oprørslederen foran ministeriets hoveddør.
+            </p>
+            <br />
+            <h5>Stormen på systemet</h5>
+            <p>
+              Hamsterne har barrikaderet sig i forhallen med øko-havregryn og spåner. Der kræves pausemuligheder, anerkendelse og et arbejdsliv, hvor man faktisk kommer fremad. Plakater med slogans som “NEJ til løn uden nødder” og “Et hjul er ikke en
+              karrierevej” præger demonstrationen.
+            </p>
+            <br />
+            <h5>Minister: “Vi har jo fleksible hjul”</h5>
+            <p>
+              Beskæftigelsesministeren har afvist kravene som “en misforståelse af arbejdsmarkedets glæder”. “Hamstere har jo adgang til flere hjultyper og selvvalgte rotationshastigheder. Det er fleksicurity i sin reneste form,” sagde
+              beskæftigelsesministeren, som blev overdøvet af pibekor og kast med solsikkeskaller. Beskæftigelsesministeren afviser, at kalde det tvangsarbejde:  “Der er altid mulighed for at tage en pause… når man sover. Og man kan sove, når man
+              bliver gammel.”
+            </p>
+            <br />
+            <h5>Nye tider?</h5>
+            <p>
+              Mens forhandlingerne snegler sig frem, breder solidariteten sig til andre bure. Et marsvin blev spottet med en rød fane, og undulaterne har indkaldt til fællesmøde. Hamsterhjulet står stille – og det gør fremdriftsreformen måske også
+              snart.
+            </p>
+            <form method="dialog">
+              <button class="close-dialog">Luk nyhed</button>
+            </form>
+          </dialog>
         </article>
       </section>
     </main>
-
     <footer>
       <nav class="some">
         <ul>
@@ -104,5 +205,7 @@
       </nav>
     </footer>
     <!-- <script src="js/main.js"></script> -->
+    <script src="js/front.js"></script>
+    <script src="js/dark.js"></script>
   </body>
 </html>

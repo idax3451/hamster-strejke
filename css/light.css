@@ -1,0 +1,14 @@
+:root {
+  --background-color: #ffe9ac;
+  --text-color: #000000;
+  --link-color: #ffffff;
+  --link-color: #000000;
+  color: var(--followup-text-color);
+  --followup-text-bg-color4: #ffffff;
+}
+
+imput {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
