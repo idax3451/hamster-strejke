@@ -1,7 +1,6 @@
 :root {
   /* Colours */
   --primary-bg-color: #ffe9ac; /* used */
-  --primary-font-color: #000000; /* used */
 
   --secondary-bg-color: #5d656c; /* used */
   --secondary-font-color: #ffffff; /* used */
@@ -16,12 +15,13 @@
   --danger-color: #dc3545;
 
   /* Borders */
-  --border-color: #007bff; /* used */
   --border-color-light: #f7f5c2; /* used */
   --border-radius: 0.25rem;
 
   /* Links */
   --link-color: #84888e; /* used */
+  --link-color2: #ffffff; /* used */
+  --link-hover-color: #ffffff; /* used */
   --hover-color: #f9fcfe; /* used */
   --active-color: #f52727; /* used */
 
@@ -63,7 +63,6 @@
   --headline-color: #ffffff;
   --headline2-color: #ffffff;
   --headline3-color: #ffffff;
-  --p-color: #000000;
   --headline-color-inverted: #ffffff;
   --bodytext-color: #575c61;
   --bodytext-color-inverted: #f9fcfe;
@@ -71,6 +70,7 @@
   --cta-text-color-inverted: #bbc3ca;
   --followup-text-color: #fffae2;
   --followup-text-color2: #000000;
+  --followup-text-color3: #ffffff;
   --followup-text-color-inverted: #bbc3ca;
   --formfield-text-color: #575c61;
   --form-submit-color: #bbc3ca;
@@ -85,7 +85,7 @@
   --article-background-color3: #ffffff;
   --news-background-color: #dbdde3;
   --news-background-color-inverted: #dbe2f5;
-  --info-background-color: #dbdde3;
+  --info-background-color: #ffffff;
   --headline-bg-color: #dbdde3;
   --headline-bg-color-alert: #ff4b00;
   --headline-bg-color-alert2: #9dc283;
@@ -94,11 +94,12 @@
   --bodytext-bg-color-inverted: #dbdde3;
   --cta-text-bg-color: #dbdde3;
   --cta-text-bg-color-inverted: #dbdde3;
-  --followup-text-bg-color: #ff4b00;
+  --followup-text-bg-color: #ffffff;
   --followup-text-bg-color1: #f79d60;
   --followup-text-bg-color2: #f79d60;
   --followup-text-bg-color3: #f79d60;
   --followup-text-bg-color4: #fffae2;
+  --followup-text-bg-color5: #ff6014;
   --followup-text-bg-color-inverted: #dbdde3;
   --form-background-color: #c5c7ce;
   --form-text-color: #dbdde3;

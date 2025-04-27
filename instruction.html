@@ -8,18 +8,23 @@
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/infographic.css" />
-    <link rel="icon" type="image/png" href="img/fav.png" />
+    <link id="colormode" rel="stylesheet" href="css/light.css" />
+    <link rel="stylesheet" href="css/darklightstyle.css" />
     <title>Hamster-strejke</title>
   </head>
   <body id="instruction">
     <header>
       <nav>
         <div id="logotype-wrapper">
-          <a href="index.html"> HAMSTERSTREJKE </a>
+          <a href="index.html"> <img class="logoheader" src="../img/logoheader.png" alt="hamsterstrejke" /> </a>
         </div>
         <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Hamsterhjul? NEJ TAK </a></li>
           <li><a class="menuItem" href="register.html">Del din hamster-historie</a></li>
+          <label class="switch">
+            <input id="switchBtn3" type="checkbox" />
+            <span class="slider"> </span>
+          </label>
         </ul>
       </nav>
     </header>
@@ -485,5 +490,6 @@
       </nav>
     </footer>
     <!-- <script src="js/main.js"></script> -->
+    <script src="js/dark.js"></script>
   </body>
 </html>
